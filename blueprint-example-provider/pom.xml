@@ -12,6 +12,7 @@
 
     <artifactId>blueprint-example-provider</artifactId>
     <name>Apache Karaf ::: Blueprint ::: Provider</name>
+    <packaging>bundle</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
