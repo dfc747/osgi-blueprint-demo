@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+    <bean id="bookingService" class="org.example.blueprint.provider.internal.BookingServiceImpl" />
+    <service ref="bookingService" interface="org.example.blueprint.common.BookingService"/>
+
+<!--    Alternative way to register service and implementation-->
+<!--    <service id="bookingService"  interface="org.example.blueprint.common.BookingService">-->
+<!--        <bean class="org.example.blueprint.provider.internal.BookingServiceImpl" />-->
+<!--    </service>-->
+
+
+</blueprint>
