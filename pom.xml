@@ -7,10 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>untitled6</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
     <modules>
         <module>blueprint-example-common</module>
         <module>blueprint-example-provider</module>
+        <module>blueprint-example-client</module>
+        <module>blueprint-example-features</module>
     </modules>
 
     <properties>

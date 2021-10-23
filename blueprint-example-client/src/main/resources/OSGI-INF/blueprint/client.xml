@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+    <reference id="bookingService" interface="org.example.blueprint.common.BookingService"/>
+
+    <bean id="clientService" class="org.example.blueprint.client.ClientServiceImpl">
+        <property name="bookingService" ref="bookingService"/>
+    </bean>
+
+    <service interface="org.example.blueprint.client.ClientService" ref="clientService"/>
+
+    <bean id="displayClient" class="org.example.blueprint.client.Display" init-method="init" destroy-method="destroy">
+        <property name="clientService" ref="clientService"/>
+    </bean>
+
+</blueprint>
