@@ -7,7 +7,7 @@
 * `blueprint-example-client` uses `OSGI-INF/blueprint/client.xml` Blueprint XML to get a service and start a thread.
 * `blueprint-example-features` contains a Karaf features repository used for the deployment.
 
-## Build
+## Build
 
 Use:
 
@@ -15,7 +15,7 @@ Use:
 mvn clean install
 ```
 
-## Feature and Deployment
+## Feature and Deployment
 
 On a running Karaf instance, you register the blueprint example features repository with:
 
